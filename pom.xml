@@ -22,7 +22,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
-        <guava.version>28.0-jre</guava.version>
+        <guava.version>30.0-android</guava.version>
 
         <skip.jooq.generation>false</skip.jooq.generation>
         <database.url>jdbc:mysql://localhost:3306/</database.url>
@@ -160,14 +160,14 @@
                         <driver>com.mysql.cj.jdbc.Driver</driver>
                         <url>${database.url}</url>
                         <user>root</user>
-                        <password></password>
+                        <password/>
                     </jdbc>
                     <generator>
                         <name>org.jooq.codegen.JavaGenerator</name>
                         <database>
                             <name>org.jooq.meta.mysql.MySQLDatabase</name>
                             <includes>.*</includes>
-                            <excludes></excludes>
+                            <excludes/>
                             <!--<inputSchema></inputSchema>--> <!-- This will generate all schema of db, better to only generate the one interested in -->
                             <inputSchema>information_schema</inputSchema>
                         </database>
