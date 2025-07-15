@@ -58,7 +58,7 @@
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
-            <version>3.9</version>
+            <version>3.18.0</version>
         </dependency>
         <dependency>
             <groupId>commons-io</groupId>
@@ -160,14 +160,14 @@
                         <driver>com.mysql.cj.jdbc.Driver</driver>
                         <url>${database.url}</url>
                         <user>root</user>
-                        <password></password>
+                        <password/>
                     </jdbc>
                     <generator>
                         <name>org.jooq.codegen.JavaGenerator</name>
                         <database>
                             <name>org.jooq.meta.mysql.MySQLDatabase</name>
                             <includes>.*</includes>
-                            <excludes></excludes>
+                            <excludes/>
                             <!--<inputSchema></inputSchema>--> <!-- This will generate all schema of db, better to only generate the one interested in -->
                             <inputSchema>information_schema</inputSchema>
                         </database>
